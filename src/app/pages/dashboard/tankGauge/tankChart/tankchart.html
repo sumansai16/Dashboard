@@ -1,0 +1,34 @@
+ <!--
+<ba-card title="{{message.name + ' - ' + message.time}}" baCardClass="large-card with-scroll feed-panel" *ngFor="let message of TagCard">
+
+    <div class="text-block" *ngFor="let item of message.data">
+
+       <div class="card" >
+          <div class="card-header">
+            {{item.name}}
+          </div>
+          <div class="card-block">
+            <p class="card-text">{{item.value}}</p>
+          </div>
+        </div>
+
+    </div>
+ </ba-card>
+-->
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+
+<!--chartId="{{message.name}}"-->
+<!--<div class="row pie-charts">
+  <ba-card title="{{message.name + ' (' + message.unit + ')'}}" *ngFor="let message of TankGauge" class="pie-chart-item-container col-xlg-3 col-lg-3 col-md-6 col-sm-12 col-12">
+  -->  
+    <div id="{{chartId}}" [style.width.%]="50" [style.height.px]="200"></div>
+  <!--
+  </ba-card>
+
+</div>
+-->

@@ -1,0 +1,14 @@
+<div class="float-left text-center">
+<div id="{{chartId}}" [style.width.px]="115" [style.height.px]="200" ></div>
+<table *ngFor="let message of dValue" style="margin: 0 auto; text-align:left;font-size:12px;">
+        <tr>
+            <td>batt: </td>
+            <td>{{message.batt}}</td>
+        </tr>
+        <tr>
+            <td>temp: </td>
+            <td>{{message.temp}}</td>
+        </tr>
+    </table>
+
+</div>

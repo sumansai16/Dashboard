@@ -1,0 +1,29 @@
+<div class="row">
+<!--<ba-card title="" class="col-xlg-2 col-lg-2 col-md-4 col-sm-6 table-responsive"> -->
+    <!--
+    <table>
+      <tr *ngFor="let message of PropertyCard">
+        <td><span style="font-weight:bold;">{{message.name}}: </span></td>
+        <td>{{message.value}}</td>
+      </tr>
+    </table> -->
+
+
+<ba-card title="{{message.name}}" *ngFor="let message of PropertyCard" class="col-xlg-2 col-lg-2 col-md-4 col-sm-6 table-responsive">
+    
+{{message.value}}
+
+
+<!-- <div *ngFor="let message of PropertyCard" class="col-xlg-2 col-lg-2 col-md-4 col-sm-6 table-responsive">
+    
+  <h3 class="card-title" translate>{{message.name}}</h3>
+    
+  <div class="card-body">
+      {{message.value}}
+  </div>
+</div>
+-->
+
+</ba-card>  
+
+</div>

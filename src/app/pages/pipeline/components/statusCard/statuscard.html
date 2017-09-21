@@ -1,0 +1,51 @@
+<!--<div class="row"> -->
+<!--
+<ba-card title="" *ngIf="StatusCard.length" class="col-xlg-4 col-lg-4 col-md-4 col-sm-6 text-center">
+  <div *ngFor="let message of StatusCard">
+<div *ngIf="message.value=='False';then offline else online"></div>
+
+<ng-template #offline>
+  <div class="alert alert-danger" role="alert">
+  <strong>{{message.name}}</strong>
+  </div>
+</ng-template>
+<ng-template #online>
+  <div class="alert alert-success" role="alert">
+  <strong>{{message.name}}</strong>
+</div>
+</ng-template>
+</div>
+
+</ba-card> -->
+
+<!-- <div class="row"> -->
+<ba-card title="Alarms" *ngIf="StatusCard.length > 0" >
+  <span *ngFor="let message of StatusCard" >
+  <div *ngIf="message.value=='False';then offline else online" ></div>
+
+<ng-template #offline>
+  <div class="alert alert-danger float-left text-center" style="margin: 0px 3px 3px 3px;" role="alert" >
+  <strong>{{message.name}}</strong>
+  </div>
+</ng-template>
+<ng-template #online>
+  <div class="alert alert-success float-left text-center " style="margin: 0px 3px 3px 3px;" role="alert" >
+  <strong>{{message.name}}</strong>
+</div>
+</ng-template>
+  </span>
+  <!-- <span style="clear:both;"></span> -->
+</ba-card>
+<!-- </div> -->
+<!-- </div>  -->
+
+<!--
+<div class="row">
+  <ba-card title="{{message.name}}" *ngFor="let message of StatusCard" class="col-xlg-4 col-lg-4 col-md-4 col-sm-6 text-center">
+    
+        <div class="description-stats">{{message.value}}</div>
+      
+  </ba-card>
+
+</div>
+-->

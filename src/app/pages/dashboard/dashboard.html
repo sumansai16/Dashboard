@@ -1,0 +1,96 @@
+<div class="row">
+  <div class="col-xlg-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <!--<ba-card class="pie-chart-item-container col-xlg-3 col-lg-3 col-md-6 col-sm-12 col-12">-->
+      <div class="container">
+      <div class="row">
+   <ba-card class="col-xlg-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" >
+     <b>ESP Chart</b>
+     <nga-line-amchart></nga-line-amchart>
+   </ba-card> 
+
+   <ba-card class="col-xlg-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+    <div style="width:100%">
+      <b>Alarms</b>
+    <app-alarm-component></app-alarm-component>
+    </div>
+   </ba-card> 
+  <ba-card class="col-xlg-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+   <app-high-chart> </app-high-chart>
+  </ba-card> 
+
+  <!--<ba-card style="height: 800px; overflow:auto"  class="col-xlg-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">-->
+    <!--</ba-card> -->
+
+      </div>
+      </div>
+    <!--</ba-card>-->
+      <!--Plains LACT - 5/16/2017 2:38:48 PM-->
+      <!--<tagcard></tagcard>-->
+     
+         <!-- <tankgauge></tankgauge> -->
+   
+  </div>
+</div>
+      <div> <app-multi-linechart></app-multi-linechart> </div>
+<br />
+      <!-- Alert Notification Component -->
+  <link rel="stylesheet" href="https://unpkg.com/ng2-toasty@4.0.0/style.css">
+      <div class="container">
+      <app-alert-notifications></app-alert-notifications>
+     <div> <ng2-toasty [position]="toastyComponentPosition"></ng2-toasty> </div>
+      </div>
+
+<!--
+<div class="row">
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <pie-chart></pie-chart>
+  </div>
+</div>
+
+<div class="row">
+  <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12"
+                     title="dashboard.acquisition_channels" baCardClass="traffic-panel medium-card">
+    <traffic-chart></traffic-chart>
+  </ba-card>
+
+  <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12"
+           title="dashboard.users_by_country" baCardClass="medium-card">
+    <users-map></users-map>
+  </ba-card>
+</div>
+
+<div class="row">
+ 
+  <div class="col-xlg-9 col-xl-6 col-lg-6  col-md-12 col-sm-12 col-12">
+    <div class="row">
+      <ba-card class="col-xlg-8 col-xl-12 col-lg-12 col-md-7 col-sm-12 col-12"
+               title="dashboard.revenue" baCardClass="medium-card">
+        <line-chart></line-chart>
+      </ba-card>
+      <ba-card class="col-xlg-4 col-xl-12 col-lg-12 col-md-5 col-sm-12 col-12"
+               baCardClass="popular-app medium-card">
+        <popular-app></popular-app>
+      </ba-card>
+    </div>
+  </div>
+
+  <div class="col-xlg-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+    <ba-card title="dashboard.feed"
+             baCardClass="large-card with-scroll feed-panel">
+      <feed></feed>
+    </ba-card>
+  </div>
+
+</div>
+
+<div class="row shift-up">
+  <ba-card class="col-xlg-3 col-lg-6 col-md-12 col-sm-12 col-12" title="dashboard.todo_list"
+           baCardClass="xmedium-card feed-comply-panel with-scroll todo-panel">
+    <todo></todo>
+  </ba-card>
+  <ba-card class="col-xlg-6 col-lg-6 col-md-12 col-sm-12 col-12" title="dashboard.calendar"
+           baCardClass="xmedium-card feed-comply-panel with-scroll calendar-panel">
+    <calendar></calendar>
+  </ba-card>
+</div>
+-->

@@ -1,0 +1,27 @@
+#infinite-scroller {
+  height: 485px;
+  width: 100%;
+  // border: 1px solid #f5ad7c;
+  overflow: scroll;
+  padding: 0;
+  list-style: none;
+
+  // li {
+  //   padding : 10px 5px;
+  //   line-height: 1.5;
+  //   &:nth-child(odd) {
+  //     background : #ffe8d8;
+  //   }
+  //   &:nth-child(even) {
+  //     background : #f5ad7c;
+  //   }
+  // }
+}
+
+.box{
+border: 0.5px;
+ padding : 10px 5px;
+ position: relative;
+ line-height: 1.5;
+
+}

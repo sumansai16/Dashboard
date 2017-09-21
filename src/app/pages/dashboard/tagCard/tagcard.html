@@ -1,0 +1,30 @@
+ <!--
+<ba-card title="{{message.name + ' - ' + message.time}}" baCardClass="large-card with-scroll feed-panel" *ngFor="let message of TagCard">
+
+    <div class="text-block" *ngFor="let item of message.data">
+
+       <div class="card" >
+          <div class="card-header">
+            {{item.name}}
+          </div>
+          <div class="card-block">
+            <p class="card-text">{{item.value}}</p>
+          </div>
+        </div>
+
+    </div>
+ </ba-card>
+-->
+
+<div class="row pie-charts">
+  <ba-card title="{{message.name + ' (' + message.unit + ')'}}" *ngFor="let message of TagCard" class="pie-chart-item-container col-xlg-6 col-lg-6 col-md-8 col-sm-6">
+    <div class="pie-chart-item" >
+      <div class="description">
+        <div translate></div>
+        <div class="description-stats">{{message.value}}</div>
+      </div>
+    </div>
+
+  </ba-card>
+
+</div>

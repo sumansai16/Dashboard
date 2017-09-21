@@ -1,0 +1,16 @@
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+<!-- title="{{message.name + ' (' + message.unit + ')'}}" -->
+<!-- <div class="row"> -->
+  
+  <ba-card title="Tanks" *ngIf="TankGauge.length > 0" class="col-sm-6">
+    <span *ngFor="let message of TankGauge">
+    <tankchart chartId="{{message.name}}"cValue="{{message.value}}" mValue="{{message.max}}" nValue="{{message.name}}" unit="{{message.unit}}" [dValue]="message.data"></tankchart>
+    </span>
+    <!-- <span style="clear:both;"></span> -->
+  </ba-card>
+<!-- </div>  -->

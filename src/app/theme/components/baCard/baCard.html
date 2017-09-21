@@ -1,0 +1,80 @@
+<div baCardBlur class="animated fadeIn card {{cardType}} {{baCardClass || ''}}" zoom-in>
+    <div *ngIf="title" class="card-header clearfix">
+        <a translate style="font-size:12px" data-toggle=".collapse.show" href="{{'#' + cardId}}"><strong>{{title}}</strong></a>
+    </div>
+    <div class="card-body collapse.show" id="{{cardId}}">
+        <ng-content></ng-content>
+    </div>
+</div>
+
+
+<!--
+<div baCardBlur class="animated fadeIn card {{cardType}} {{baCardClass || ''}}" zoom-in>
+    <div *ngIf="title" class="card-header clearfix" >
+        <span translate style="font-size:12px"><strong>{{title}}</strong></span>
+    </div>
+    <div class="card-body">
+        <ng-content></ng-content>
+    </div>
+</div> -->
+
+<!--
+<div class="card">
+    <div class="card-header">
+        <a data-toggle="collapse" href="{{'#' + cardId}}" aria-expanded="true" aria-controls="">
+            {{title}}
+        </a>
+    </div>
+    <div id="{{cardId}}" class="collapse in">
+        <div class="card-block">
+            <ng-content></ng-content>
+        </div>
+    </div>
+</div>
+-->
+
+<!--
+<div class="card">
+<div class="card-header">
+<a data-toggle="collapse" href="{{'#' + cardId}}">{{title}}</a>
+</div>
+  <div id="{{cardId}}" class="collapse in">
+    <div class="card-block">
+            <ng-content></ng-content>
+        </div>
+  </div>
+</div>
+-->
+
+<!--
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    {{title}}
+  </a>
+  <!--<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-target
+  </button>
+</p>
+<div class="collapse in" id="collapseExample">
+  <div class="card card-block">
+    <ng-content></ng-content>
+  </div>
+</div>
+-->
+
+
+
+<!-- working
+<div class="card">
+    <div class="card-header">
+        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            {{title}}
+        </a>
+    </div>
+    <div class="collapse in" id="collapseExample">
+  <div class="card card-block">
+    <ng-content></ng-content>
+  </div>
+</div>
+</div>
+-->
